@@ -47,20 +47,20 @@ p {
 }
 
 .container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     min-height: 60vh;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .section-header {
     text-align: center;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 40px 0;
     font-family: 'CocaCola Secondary';
     color: rgb(255,248,255);
     letter-spacing: 4px;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .contact-wrapper {
@@ -68,7 +68,7 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
     position: relative;
     max-width: 80%;
     border-radius: 15px;

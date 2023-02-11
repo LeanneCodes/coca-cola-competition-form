@@ -16,11 +16,11 @@ let bgBubbles = [];
 
 // coca-cola bubbles at the bottom of the page
 function addBubble() {
-    Bubbles.push(new Bubble('rgb(53, 20, 27)', 3)); // brown bubbles (representing the cola)
+    Bubbles.push(new Bubble('rgb(53, 20, 27)', 2.5)); // brown bubbles (representing the cola)
 }
 
 function addBgBubble() {
-    bgBubbles.push(new Bubble('rgb(255,248,255)', 4)); // white bubbles (representing the foam)
+    bgBubbles.push(new Bubble('rgb(255,248,255)', 2.8)); // white bubbles (representing the foam)
 }
 
 // class
