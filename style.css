@@ -15,9 +15,14 @@
 }
 
 body {
-    background-color: #E61D2B;
+    background-color: #E61D2B !important;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    color: rgb(255,248,255) !important;
+}
+
+p {
+    margin: 0 10px !important;
 }
 
 .brand-logo-font {
@@ -26,126 +31,144 @@ body {
 }
 
 /* competition form */
+.terms {
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+}
+
+.social-title {
+    font-family: 'CocaCola Secondary';
+    font-size: 1.1rem;
+    margin-bottom: -25px;
+}
+
 .container {
     width: 60%;
     margin: auto;
     min-height: 60vh;
     margin-top: 5rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    border: 1px solid black;
+}
+
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-family: 'CocaCola Secondary';
+    color: rgb(255,248,255);
+    letter-spacing: 4px;
+    font-size: 4rem;
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 auto;
     padding: 20px;
     position: relative;
-    max-width: 840px;
+    max-width: 80%;
+    border-radius: 15px;
+    color: rgb(255,248,255);
+    background-color: rgba(255,248,255, 0.35);
 }
 
 .form-horizontal {
-    max-width: 400px;
+    max-width: 80%;
     font-family: 'CocaCola Secondary';
     font-weight: 400;
 }
 
 .form-control, 
 textarea {
-  max-width: 400px;
-  background-color: #000;
-  color: #fff;
-  letter-spacing: 1px;
+    max-width: 400px;
+    background-color: #000;
+    color: rgb(255,248,255);
+    letter-spacing: 1px;
 }
 
 .send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    background-color: rgb(53, 20, 27) !important;
+    transition: all .2s ease-in-out;
 }
 
 .alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
 }
 
 .send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(255,248,255);
 }
 
 .alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+    transform: translate3d(0px, -29px, 0px);
+}
+
+.fa-paper-plane {
+    color: rgb(255,248,255);
 }
 
 .direct-contact-container {
-    max-width: 400px;
-  }
+    max-width: 60%;
+    color: rgb(255,248,255);
+}
   
   /* Location, Phone, Email Section */
-  .contact-list {
+.contact-list {
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
-  }
+}
   
-  .list-item {
+.list-item {
     line-height: 4;
     color: #aaa;
-  }
-  
-  .contact-text {
+}
+
+.contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
     color: #bbb;
-  }
-  
-  .place {
-    margin-left: 62px;
-  }
-  
-  .phone {
-    margin-left: 56px;
-  }
-  
-  .gmail {
-    margin-left: 53px;
-  }
-  
-  .contact-text a {
+}
+
+.contact-text a {
     color: #bbb;
     text-decoration: none;
     transition-duration: 0.2s;
-  }
-  
-  .contact-text a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
+}
 
-  .social-media-list {
+.contact-text a:hover {
+    color: rgb(255,248,255);
+    text-decoration: none;
+}
+
+.social-media-list {
     position: relative;
     font-size: 22px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
     padding: 0;
-  }
-  
-  .social-media-list li a {
-    color: #fff;
-  }
-  
-  .social-media-list li {
+}
+
+.social-media-list li a {
+    color: rgb(255,248,255);
+}
+
+.social-media-list li {
     position: relative; 
     display: inline-block;
     height: 60px;
@@ -153,13 +176,13 @@ textarea {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
+    color: rgb(255,248,255);
+    background-color: rgb(53, 20, 27);
     cursor: pointer; 
     transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:after {
+}
+
+.social-media-list li:after {
     content: '';
     position: absolute;
     top: 0;
@@ -169,33 +192,35 @@ textarea {
     line-height: 60px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px rgb(255,248,255);
     transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:hover {
-    background-color: #fff; 
-  }
-  
-  .social-media-list li:hover:after {
+}
+
+.social-media-list li:hover {
+    background-color: rgb(255,248,255); 
+}
+
+.social-media-list li:hover:after {
     opacity: 1;  
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list li:hover a {
-    color: #000;
-  }
-  
-  .copyright {
+}
+
+.social-media-list li:hover a {
+    color: rgb(53, 20, 27);
+}
+
+.copyright {
     font: 200 14px 'Oswald', sans-serif;
     color: #555;
     letter-spacing: 1px;
     text-align: center;
-  }
+    }
   
   hr {
     border-color: rgba(255,255,255,.6);
+    width: 30%;
+    margin: 1rem auto !important;
   }
 
 canvas {
@@ -215,6 +240,6 @@ footer {
     text-align: center;
     left: 0;
     bottom: 0;
-    color: #fff8ff;
+    color: rgb(255,248,255)8ff;
 }
 
